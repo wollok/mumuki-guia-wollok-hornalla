@@ -1,0 +1,14 @@
+test "trencito" {
+  trencito.vaciar()
+  assert.equals(false, trencito.vaCargado())
+  assert.equals(true, trencito.vaTranca())
+  trencito.subir(25)
+  assert.equals(false, trencito.vaCargado())
+  assert.equals(false, trencito.vaTranca())
+  trencito.subir(20)
+  assert.equals(true, trencito.vaCargado())
+  assert.equals(false, trencito.vaTranca())
+  trencito.bajar(38)
+  assert.equals(false, trencito.vaCargado())
+  assert.equals(true, trencito.vaTranca())
+}

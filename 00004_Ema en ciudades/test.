@@ -1,0 +1,8 @@
+test "ema" {
+  ema.mudarse(encarnacion)
+  assert.equals(3550, ema.gastosDiarios())
+  assert.equals(false, ema.estaComoda())
+  ema.mudarse(salvadorDeBahia)ema.gastosDiarios()
+  assert.equals(3200, ema.gastosDiarios())
+  assert.equals(true, ema.estaComoda())
+}

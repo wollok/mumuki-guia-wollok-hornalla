@@ -1,0 +1,8 @@
+test "hornalla que se prende y apaga" {
+  hornalla.prender()
+  assert.equals(180, hornalla.temperatura())
+  assert.equals(4, hornalla.consumo())
+  hornalla.apagar()
+  assert.equals(20, hornalla.temperatura())
+  assert.equals(0, hornalla.consumo())
+}
